@@ -7,15 +7,21 @@
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
   </head>
+  <style>
+    :host {
+      width: 400px;
+      height: 400px;
+    }
+  </style>
   <body>
     <div class="container" style="text-align: -webkit-center">
       <row>
         <div class="col-12" style="text-align: center">
-          <h1>DEMO-VR con DODGE - BOOTSTRAP</h1>
+          <h1>DEMO AR</h1>
         </div>
         <row>
-          <div class="col-12" style="text-align: center; border: solid 2px black; border-radius: 15px; width: 400px; height: 400px; margin: 0">
-            <model-viewer src="./public/scene4.gltf" ios-src="Mech_Drone.usdz" ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" camera-controls alt="A 3D model of an astronaut"></model-viewer>
+          <div class="col-12" style="width: 400px; height: 400px; border: solid 2px black; border-radius: 15px; padding: 0">
+            <model-viewer style="width: 350px; height: 350px; margin: 6%" src="./public/scene4.gltf" ios-src="Mech_Drone.usdz" ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" camera-controls alt="A 3D model of an astronaut"></model-viewer>
           </div>
         </row>
       </row>
